@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Pintos Mauricio - CIU 1er Parcial</title>
+    <link href="src/css/estilos.css" rel='stylesheet'/>
+</head>
+<body>
+<!-- Desarrollo del Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light my-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="src/img/logo.png" alt="Logo del sitio web">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Incio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Redes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Saber mas</a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="formulario-flotante">
+                                <!-- <a href="#" id="cerrar" target="Cerrar" onclick="ocultarFormulario('formulario-flotante')">Cerrar(X)</a> -->
+                            </div>
+
+                            <a class="nav-link" target="Registro" onclick="mostrarFormulario('formulario-flotante', 'register.html');">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Desarrollo de un selector de tema -->
+    <div class="tema-selector">
+        <button class="btn btn-primary bg-dark text-light" type="button">Tema oscuro</button>
+        <button class="btn btn-primary bg-light text-dark" type="button">Tema claro</button>
+    </div>
+
+    <!-- Desarrollo del main -->
+    <main>
+        <div class="container">
+            <h1 class="text-center mt-5 mb-5">EL METAVERSO: UNA MIRADA AL FUTURO DEL TRABAJO</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- INSERTAR UNA TABLA -->
+                </div>
+                <div class="col-md-4">
+                  <!-- TO DO -->
+                </div>
+                <div class="col-md-4">
+                  <!-- TO DO -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Desarrollo del footer -->
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>Construcción de Interfáces de Usuario - UNaHur</p>
+            <p>Todo el contenido es utilizado con fines didácticos a los fines del 1er Parcial</p>
+            <p>Mauricio Pintos - © 2023 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Llamadas al scrips de JavaScript -->
+    <script type="text/javascript" src='src/js/script.js'></script>
+    <script>
+        function mostrarIframe() {
+          var iframe = document.getElementById("if-registro");
+          iframe.style.display = "block";
+        }
+      </script>
+
+    <!-- Scrip de iconos utilizados para interacciones -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

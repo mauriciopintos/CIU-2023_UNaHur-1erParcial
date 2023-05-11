@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif, Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+#formulario-flotante {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: none;
+    z-index: 999;
+}
+
+#cerrar {
+    color: beige;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* text-align: right; */
+    position: fixed;
+    top: 3%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    /* width: 500px;
+    height: 400px; */
+}

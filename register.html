@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Form - Pintos Mauricio - CIU 1er Parcial</title>
+    <link href="src/css/estilos.css" rel='stylesheet'/>
+</head>
+<body>
+    <!-- Desarrollo del main -->
+    <main>
+        <a href="#" id="cerrar" onclick="ocultarFormulario('formulario-flotante')">Cerrar(X)</a>
+        <!-- Desarrollo de un formulario -->
+        <!-- Con [onsubmit="return false;"] cancelamos el envio del formulario
+            aun servidor y solo se procesa lo que definimos en [onclick] -->
+            <!-- https://getbootstrap.com/docs/5.0/forms/overview/ -->
+        <form id="forma" onsubmit="return false;">
+            <div class="container">
+                <!-- Selector de Pais -->
+                <select class="selector_pais" id="pais" onchange="cargarPais()">
+                    <option value="" selected>--Elegí un país--</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+                 
+                <div class="datos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+
+                    <label for="empresa">Empresa:</label>
+                    <input type="text" id="empresa" name="empresa" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Selector de incremento -->
+                <select class="agregar_tipo" id="tipo">
+                    <option value="agregar" selected>+</option>
+                    <option value="quitar" >-</option>
+                </select>
+                <button class="agregar_btn" onclick="agregarDato()">
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
