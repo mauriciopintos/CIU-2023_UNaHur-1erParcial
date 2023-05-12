@@ -111,6 +111,7 @@ footer:hover {
     font-size:larger;
 }
 
+/* background-image: url('ruta/a/tu/imagen.jpg') */
 /* Estilo para cuadro de detalles */
 .border {
     border-radius: 2%;
@@ -119,4 +120,34 @@ footer:hover {
 
 .border #encabezado {
     color: rgb(232, 196, 63);
+}
+
+.navbar {
+    background-color: #3333332c;
+}
+
+.navbar:hover {
+    background-color: #9e99992c;
+}
+
+/* Estilo para cambiar logo */
+.navbar .cambiar-logo::before {
+    content: url("src/img/logo.png");
+}
+  
+.navbar .cambiar-logo:hover::before {
+    content: url("src/img/logo_2.png");
+}
+
+  
+.btn {
+    margin-left: 1em;
+}
+
+.btn-warning {
+    background-color: #48f3568c;
+}
+
+.btn-secondary:hover {
+    background-color: #c7ccc88c;
 }

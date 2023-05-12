@@ -25,10 +25,10 @@
 <body>
 <!-- Desarrollo del Encabezado -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light my-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="src/img/logo.png" alt="Logo del sitio web">
+                    <img class="cambiar-logo" src="src/img/logo.png" alt="Logo del sitio web">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,10 +38,6 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="https://www.virbela.com/">Incio</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">Redes</a>
-                        </li> -->
-                        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Redes
@@ -59,14 +55,12 @@
                             </ul>
                         </li>
                                     
-                        </li>
-                        <!-- fin PRUEBA -->
                         <li class="nav-item">
                             <div id="formulario-flotante"></div>
-                            <a class="nav-link" target="Registro" onclick="mostrarFormulario('formulario-flotante', 'register.html');">Registro</a>
+                            <button class="nav-link btn btn-warning" target="Registro" onclick="mostrarFormulario('formulario-flotante', 'register.html');">Registro</button>
                         </li>
                         <li class="nav-item">
-                            <a id="tema" class="nav-link" href="#">Cambiar modo</a>            
+                            <button id="tema" class="nav-link btn btn-secondary" href="#">Cambiar modo</button>
                         </li>
                     </ul>
                 </div>
