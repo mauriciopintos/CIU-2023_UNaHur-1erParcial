@@ -13,51 +13,60 @@
     <main>
         <a href="#" id="cerrar" onclick="ocultarFormulario('formulario-flotante')">Cerrar(X)</a>
         <!-- Desarrollo de un formulario -->
-        <!-- Con [onsubmit="return false;"] cancelamos el envio del formulario
-            aun servidor y solo se procesa lo que definimos en [onclick] -->
-            <!-- https://getbootstrap.com/docs/5.0/forms/overview/ -->
-        <form id="forma" onsubmit="return false;">
-            <div class="container">
+        <form action="mailto:gabriel.molina@unahur.edu.ar,jesusnicolas.rios@unahur.edu.ar">
+            <fieldset enable>
+                <legend>Formulario de registro</legend>
                 <!-- Selector de Pais -->
-                <select class="selector_pais" id="pais" onchange="cargarPais()">
-                    <option value="" selected>--Elegí un país--</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Bolivia">Bolivia</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Ecuador">Ecuador</option>
-                    <option value="Paraguay">Paraguay</option>
-                    <option value="Perú">Perú</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Venezuela">Venezuela</option>
-                </select>
-                 
+                <div class="mb-3">
+                    <label for="selector_pais" class="form-label">Elejí tu país</label>                    
+                    <select id="selector_pais" class="form-select" onchange="cargarPais()">
+                        <option value="" selected>--Elegí un país--</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+                </div>    
+                
                 <div class="datos">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <div class="mb-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
 
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
+                    <div class="mb-3">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
 
-                    <label for="empresa">Empresa:</label>
-                    <input type="text" id="empresa" name="empresa" required>
+                    <div class="mb-3">
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" id="empresa" name="empresa" required>
+                    </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <div class="mb-3">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
                 </div>
-                <!-- Selector de incremento -->
-                <select class="agregar_tipo" id="tipo">
-                    <option value="agregar" selected>+</option>
-                    <option value="quitar" >-</option>
-                </select>
-                <button class="agregar_btn" onclick="agregarDato()">
-                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
-                </button>
-                <button type="submit">Enviar</button>
-            </div>
+                <!-- Confirma envio -->
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" enable required>
+                        <label class="form-check-label" for="disabledFieldsetCheck">
+                          Acepto enviar mi información
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </fieldset>
         </form>
-
     </main>
 </body>
 </html>

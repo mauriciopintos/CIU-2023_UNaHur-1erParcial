@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
+/* Estilo para modo claro */
 body {
-    color: #555;
+    background-color: #f5f5f5;
+    color: #333;
     font-family: Arial, Helvetica, sans-serif, Open Sans;
     font-size: 16px;
     position: relative;
@@ -13,27 +15,48 @@ body {
     font-weight: 400;
 }
 
+/* Estilo para modo oscuro */
+body.dark {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+/* Estilo para del footer */
+footer {
+    background-color:#676565;
+    color: #d3cece;
+    text-align: center;
+}
+/* Estilo para que el footer cambie al pasar con el puntero del mouse */
+  footer:hover {
+    background-color:#837c7c;
+  }
+
+/* Estilo para del formulario */
 #formulario-flotante {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 350px;
     height: 400px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(82, 82, 131, 0.807);
+    color: antiquewhite;
+    text-align: justify;
     padding: 20px;
     display: none;
     z-index: 999;
 }
 
+/* Estilo para la opcion de cerrar del formulario */
 #cerrar {
     color: beige;
     background-color: rgba(0, 0, 0, 0.8);
-    /* text-align: right; */
     position: fixed;
     top: 3%;
-    left: 93%;
+    left: 90%;
     transform: translate(-50%, -50%);
-    /* width: 500px;
-    height: 400px; */
 }
+
+
+  

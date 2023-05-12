@@ -36,3 +36,9 @@ function cargarPais(){
 function agregarDato(){
   // TODO
 }
+
+// Evento de clic para cambiar el tema
+document.getElementById("tema").addEventListener("click", function(evento) {
+  evento.preventDefault(); // prevenir el comportamiento predeterminado del enlace
+  document.body.classList.toggle("dark"); // alternar la clase "dark" en el cuerpo del documento
+});
