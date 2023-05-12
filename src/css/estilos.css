@@ -34,14 +34,14 @@ footer {
     margin-bottom: 5em;
     padding-bottom: 3em;
     padding-top: 1%;
-    background-color:#676565;
+    background-color:#535353;
     color: #d3cece;
     text-align: center;
 }
 
 /* Estilo para que el footer cambie al pasar con el puntero del mouse */
 footer:hover {
-    background-color:#817e7e;
+    background-color:#5a5757c4;
 }
 
 /* Estilo para redes sociales*/  
