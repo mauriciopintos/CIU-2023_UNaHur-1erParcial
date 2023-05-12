@@ -26,11 +26,13 @@ body.dark {
     /* color: #f5f5f5; */
 }
 /* Estilo al pasar sobre los textos */
-h1:hover,h2:hover,h3:hover,p:hover {
+h1,h2:hover,h3:hover,p:hover,.evento {
     font-family: 'Titan One', cursive;
 }
 /* Estilo para del footer */
 footer {
+    margin-bottom: 5em;
+    padding-bottom: 3em;
     padding-top: 1%;
     background-color:#676565;
     color: #d3cece;
@@ -38,11 +40,28 @@ footer {
 }
 
 /* Estilo para que el footer cambie al pasar con el puntero del mouse */
-  footer:hover {
-    background-color:#837c7c;
-  }
+footer:hover {
+    background-color:#817e7e;
+}
 
-/* Estilo para del formulario */
+/* Estilo para redes sociales*/  
+.redes li a {
+    text-decoration: none;
+}
+  
+.redes li a:hover {
+    color: #c4bebe;
+}
+  
+.redes li a i {
+    margin-right: 15px;
+}
+
+.redes li a i:hover {
+    font-size: 2em;
+}
+
+/* Estilo para el formulario */
 #formulario-flotante {
     position: fixed;
     top: 50%;
@@ -84,7 +103,8 @@ footer {
 /* Estilo para el tema del evento */
 
 .tema p {
-    font-family: 'Courgette', cursive;
+    font-family: 'Special Elite', cursive;
+    /* font-family: 'Courgette', cursive; */
     margin: 10%;
     margin-top: 2%;
     text-align: justify;

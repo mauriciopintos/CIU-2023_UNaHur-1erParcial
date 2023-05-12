@@ -1,7 +1,4 @@
-// var mensaje = 'Hola mundo'
-// console.log(mensaje);
-// alert(mensaje);
-
+/* DECLARACION DE FUNCIONES PARA UTILIZAR DESDE HTML*/
 //Mostrar el formulario
 function mostrarFormulario(id, url) {
     let formularioFlotante = document.getElementById(id);
@@ -21,24 +18,8 @@ function ocultarFormulario(id) {
   document.getElementById(id).style.display = "none";
 }
 
-// document.getElementById("formulario-flotante").addEventListener("click", function(event) {
-//     if (event.target === this) {
-//       this.style.display = "none";
-//     }
-//   });
-
-
-// document.getElementById("cerrar").addEventListener("click", ocultarFlotante);
-function cargarPais(){
-  // TODO
-}
-
-function agregarDato(){
-  // TODO
-}
-
 // Evento de clic para cambiar el tema
 document.getElementById("tema").addEventListener("click", function(evento) {
-  evento.preventDefault(); // prevenir el comportamiento predeterminado del enlace
-  document.body.classList.toggle("dark"); // alternar la clase "dark" en el cuerpo del documento
+  evento.preventDefault();
+  document.body.classList.toggle("dark");
 });
