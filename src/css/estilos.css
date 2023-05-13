@@ -29,6 +29,13 @@ body.dark {
 h1,h2:hover,h3:hover,p:hover,.evento {
     font-family: 'Titan One', cursive;
 }
+
+span {
+    color: chocolate;
+    font-style: italic;
+    font-weight: bold;
+}
+
 /* Estilo para del footer */
 footer {
     margin-bottom: 5em;
@@ -40,8 +47,9 @@ footer {
 }
 
 /* Estilo para que el footer cambie al pasar con el puntero del mouse */
-footer:hover {
+footer:hover, footer p:hover {
     background-color:#5a5757c4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Estilo para redes sociales*/  
@@ -104,14 +112,12 @@ footer:hover {
 
 .tema p {
     font-family: 'Special Elite', cursive;
-    /* font-family: 'Courgette', cursive; */
     margin: 10%;
     margin-top: 2%;
     text-align: justify;
     font-size:larger;
 }
 
-/* background-image: url('ruta/a/tu/imagen.jpg') */
 /* Estilo para cuadro de detalles */
 .border {
     border-radius: 2%;
@@ -130,21 +136,12 @@ footer:hover {
     background-color: #9e99992c;
 }
 
-/* Estilo para cambiar logo */
-.navbar .cambiar-logo::before {
-    content: url("src/img/logo.png");
-}
-  
-.navbar .cambiar-logo:hover::before {
-    content: url("src/img/logo_2.png");
-}
-
-  
+/* Estilo para los botones */
 .btn {
     margin-left: 1em;
 }
 
-.btn-warning {
+.btn-warning:hover {
     background-color: #48f3568c;
 }
 
